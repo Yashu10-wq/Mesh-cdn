@@ -1,0 +1,12 @@
+{
+  "name": "tracker-server",
+  "version": "1.0.0",
+  "description": "Central Tracker for Bharat-Acadmia P2P Micro-CDN",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}

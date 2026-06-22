@@ -1,0 +1,4 @@
+node_modules/
+.env
+.mesh_cache*
+daemon.exe

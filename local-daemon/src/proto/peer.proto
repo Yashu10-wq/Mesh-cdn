@@ -1,0 +1,16 @@
+syntax = "proto3";
+package peer;
+
+service PeerNode {
+  rpc GetChunk (ChunkRequest) returns (ChunkResponse) {}
+}
+
+message ChunkRequest {
+  string cacheKey = 1;
+  int32 chunkIndex = 2;
+}
+
+message ChunkResponse {
+  bytes chunkData = 1;
+  string expectedHash = 2;
+}
