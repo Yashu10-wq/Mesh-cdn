@@ -40,8 +40,10 @@ class DaemonLifecycleManager {
           '--proxy=$proxyPort',
           '--api=$apiPort',
           '--daemon=$daemonPort',
-          '--cache=$cacheDirPath'
+          '--cache=$cacheDirPath',
+          '--tracker=wss://mesh-cdn.onrender.com'
         ],
+        mode: ProcessStartMode.normal,
       );
 
       print('[LIFECYCLE] Daemon started with PID ${_daemonProcess?.pid}');
